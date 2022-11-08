@@ -124,20 +124,29 @@
                     
                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">Research engineer </h3>
+                            <div class="subheading mb-3">Université Grenoble Alpes/Inria</div>
+                            <p>I am a research engineer at Tyrex team. </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2022 - present</span></div>
+                    </div>
+                    
+                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Teaching experience </h3>
                             <div class="subheading mb-3">IUT2 Grenoble, France</div>
-                            <p>This year, I have a temporary teaching and research position (ATER) at IUT2 Grenoble in the departments of Informatics and Information-Communication. </p>
+                            <p>I had a temporary teaching and research position (ATER) at IUT2 Grenoble in the departments of Informatics and Information-Communication. </p>
                             
-                            <p><b>Courses in the Information-Communication department</b></p>
-                        <ul>
-                          <li><a  href="ran-LDJ/index.html">Web</a> (Course presentation can be found <a href="cours_LDJ_remise_a_niveau_html.pdf">here</a>)</li> 
+<!--                            <p><b>Courses in the Information-Communication department</b></p>-->
+<!--                        <ul>-->
+<!--                          <li><a  href="ran-LDJ/index.html">Web</a> (Course presentation can be found <a href="cours_LDJ_remise_a_niveau_html.pdf">here</a>)</li> -->
 <!--                            style="color:black;"-->
-                            <li> <a  href="AS/index.html">Réseaux et multimédia - Services Internet</a> </li> 
-                             <li> <a  href="INFONUM-web-pro/index.html">Infonum Web Professionnel</a> </li> 
-                            <li> <a  href="INFONUM-CSS/index.html">Infonum Web Professionnel CSS</a> </li> 
-                        </ul>  
+<!--                            <li> <a  href="AS/index.html">Réseaux et multimédia - Services Internet</a> </li> -->
+<!--                             <li> <a  href="INFONUM-web-pro/index.html">Infonum Web Professionnel</a> </li> -->
+<!--                            <li> <a  href="INFONUM-CSS/index.html">Infonum Web Professionnel CSS</a> </li> -->
+<!--                        </ul>  -->
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2021 - present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2021 - August 2022</span></div>
                     </div>
                     
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -180,11 +189,60 @@
             <!-- Publications-->
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
+                    <h2 class="mb-5">Publications and preprints</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
                         <ul>
+                            
+                             <li>
+                                <h4 style="margin-bottom:0px">Efficient Enumeration of Recursive Plans in Transformation-based Query Optimizers.
+                                    <span style="font-size:13px; font-family:Abel, sans-serif; font-weight:normal">[<a href="https://hal.inria.fr/hal-03692274" target="_blank">HAL</a>, <a href="https://hal.inria.fr/hal-03692274/document" target="_blank">PDF</a>, <a href="javascript:void(0)" id="button-hal-03692274" onclick="toggleShowHide('hal-03692274')">Abstract</a>]</span>
+                                </h4>
+                                 <small><b>Amela Fejza</b>, Pierre Genevès, Nabil Layaïda<br /><i>preprint</i></small>
+                                <div id="hal-03692274" style="display: none;">
+                                    <p style="text-align: justify; text-justify: inter-word;">Query optimizers built on the transformation-based
+Volcano/Cascades framework are used in many database systems.
+Transformations proposed earlier on the logical query dag
+(LQDAG) data structure, which is key in such a framework,
+focus only on recursion-free queries. In this paper, we propose
+the recursive logical query dag (RLQDAG) which extends the
+LQDAG with the ability to capture and transform recursive
+queries, leveraging recent developments in recursive relational
+algebra. Specifically, this extension includes: (i) the ability of
+capturing and transforming sets of recursive relational terms
+thanks to (ii) annotated equivalence nodes used for guiding transformations that are more complex in the presence of recursion;
+and (iii) RLQDAG rewrite rules that transform sets of subterms
+in a grouped manner, instead of transforming individual terms
+in a sequential manner; and that (iv) incrementally update
+the necessary annotations. Core concepts of the RLQDAG are
+formalized using a syntax and formal semantics with a particular
+focus on subterm sharing and recursion. The result is a clean
+generalization of the LQDAG transformation-based approach,
+enabling more efficient explorations of plan spaces for recursive
+queries. An implementation of the proposed approach shows
+significant performance gains compared to the state-of-the-art.</p>
+                                </div>
+                            </li>
+                            <br/>
+                            
+                            <li>
+                                <h4 style="margin-bottom:0px">Exploring Labeled Graphs with Recursive Path Patterns.
+                                    <span style="font-size:13px; font-family:Abel, sans-serif; font-weight:normal">[<a href="https://hal.inria.fr/hal-03517826" target="_blank">HAL</a>, <a href="https://hal.inria.fr/hal-03517826v2/document" target="_blank">PDF</a>, <a href="javascript:void(0)" id="button-hal-03517826v2" onclick="toggleShowHide('hal-03517826v2')">Abstract</a>]</span>
+                                </h4>
+                                 <small><b>Amela Fejza</b>, Pierre Genevès, Nabil Layaïda<br /><i>preprint</i></small>
+                                <div id="hal-03517826v2" style="display: none;">
+                                    <p style="text-align: justify; text-justify: inter-word;">We demonstrate a system for recursive query answering over labeled graphs. The system is based on a complete
+implementation of the recent µ-recursive relational algebra, that
+has been extended with parsers and compilers adapted for
+queries over property graphs. As a result, one can formulate,
+optimize and answer queries that navigate recursively along paths
+in property graphs. We demonstrate the system on three real
+datasets, including the exploration of chains of drug interactions.</p>
+                                </div>
+                            </li>
+                            <br/>
+                            
                             <li>
                                 <h4 style="margin-bottom:0px">Scalable and Interpretable Predictive Models for Electronic Health Records.
                                     <span style="font-size:13px; font-family:Abel, sans-serif; font-weight:normal">[<a href="https://hal.inria.fr/hal-01877742" target="_blank">HAL</a>, <a href="https://hal.inria.fr/hal-01877742/document" target="_blank">PDF</a>, <a href="javascript:void(0)" id="button-hal-01877742" onclick="toggleShowHide('hal-01877742')">Abstract</a>]</span>
@@ -194,7 +252,7 @@
                                     <p style="text-align: justify; text-justify: inter-word;">Early identification of patients at risk of developing complications during their hospital stay is currently one of the most challenging issues in healthcare. Complications include hospital-acquired infections, admissions to intensive care units, and in-hospital mortality. Being able to accurately predict the patients’ outcomes is a crucial prerequisite for tailoring the care that certain patients receive, if it is believed that they will do poorly without additional intervention. We consider the problem of complication risk prediction, such as inpatient mortality, from the electronic health records of the patients. We study the question of making predictions on the first day at the hospital, and of making updated mortality predictions day after day during the patient’s stay. We develop distributed models that are scalable and interpretable. Key insights include analysing diagnoses known at admission and drugs served, which evolve during the hospital stay. We leverage a distributed architecture to learn interpretable models from training datasets of gigantic size. We test our analyses with more than one million of patients from hundreds of hospitals, and report on the lessons learned from these experiments.</p>
                                 </div>
                             </li>
-
+                            <br/>
                             <li>
                                 <h4 style="margin-bottom:0px">The GazePlay Project: Open and Free Eye-Trackers Games and a Community for People with Multiple Disabilities.
                                     <span style="font-size:13px; font-family:Abel, sans-serif; font-weight:normal">[<a href="https://hal.archives-ouvertes.fr/hal-01804271" target="_blank">HAL</a>, <a href="https://hal.archives-ouvertes.fr/hal-01804271/document" target="_blank">PDF</a>, <a href="javascript:void(0)" id="button-hal-01804271" onclick="toggleShowHide('hal-01804271')">Abstract</a>]</span>
